@@ -1,0 +1,61 @@
+// Import the framework
+@import "node_modules/vanilla-framework";
+
+// Include all of Vanilla Framework
+@include vanilla;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    height: revert;
+  }
+  .responsive-card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.custom-card {
+  border-top-style: solid;
+  border-top-color: #faba54;
+  border-top-width: 3px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 5px 0px 5px -2px,
+    rgba(0, 0, 0, 0.15) -5px 0px 5px -2px, rgba(0, 0, 0, 0.15) 0px 5px 5px -2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+main,
+.custom-alignments {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.topic-style {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+}
+
+.category-style {
+    margin: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+h4 {
+  font-weight: 400;
+}
